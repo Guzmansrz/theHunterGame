@@ -1,6 +1,7 @@
 package personas;
 
 import animales.Arma;
+import animales.Chupacabras;
 
 public class Cazador extends Persona {
 	private static int RES_CORRER = 2;
@@ -34,13 +35,14 @@ public class Cazador extends Persona {
 		return municion;
 	}
 
-	public void disparar() {
+	public void disparar(Chupacabras chucabra) {
 		if (getMunicion() == 0) {
 			System.out.println("No tienes municion");
 		} else {
 			System.out.println("PUM PUM");
 			setMunicion(getMunicion() - 2);
 			setResistencia(RES_DISPARAR);
+			chucabra.perderSalud(12);
 		}
 	}
 
