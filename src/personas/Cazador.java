@@ -4,7 +4,7 @@ import animales.Arma;
 
 public class Cazador extends Persona {
 	private static int RES_CORRER = 2;
-	private static int RER_RECARGAR = 1;
+	private static int RES_RECARGAR = 1;
 	private static int RES_DISPARAR = 3;
 
 	private Arma arma;
@@ -57,7 +57,7 @@ public class Cazador extends Persona {
 		}
 		else {
 			arma.recargar();
-			setResistencia(RER_RECARGAR);
+			setResistencia(RES_RECARGAR);
 		}
 	}
 	public void recibirGolpe(int danno) {
