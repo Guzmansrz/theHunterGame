@@ -1,5 +1,7 @@
 package personas;
 
+import animales.Arma;
+
 public class Cazador extends Persona {
 	private Arma arma;
 	private int municion;
