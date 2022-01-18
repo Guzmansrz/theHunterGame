@@ -1,40 +1,18 @@
 package seresVivos;
 
 public class Persona {
-
-	private int edad;
-	private String genero;
-	private int altura;
+	private int salud;
 	
-	public Persona(int edad, String genero, int altura) {
+	public Persona(int salud) {
 		super();
-		this.edad = edad;
-		this.genero = genero;
-		this.altura = altura;
+		setSalud(salud);
 	}
 
-	private void setEdad(int edad) {
-		this.edad = edad;
+	protected void setSalud(int salud) {
+		this.salud = salud;
 	}
 
-	private void setGenero(String genero) {
-		this.genero = genero;
+	protected int getSalud() {
+		return this.salud;
 	}
-
-	private void setAltura(int altura) {
-		this.altura = altura;
-	}
-
-	public int getEdad() {
-		return edad;
-	}
-
-	public String getGenero() {
-		return genero;
-	}
-
-	public int getAltura() {
-		return altura;
-	}
-	
 }
