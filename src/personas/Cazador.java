@@ -58,12 +58,4 @@ public class Cazador extends Persona {
 			setResistencia(RES_RECARGAR);
 		}
 	}
-	public void recibirGolpe(int danno) {
-		if(getSalud()-danno <=0) {
-			System.out.println("Has muerto.");
-		}else {
-			setSalud(getSalud()-danno);
-			System.out.println("Tu salud es " + getSalud());
-		}
-	}
 }

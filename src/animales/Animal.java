@@ -22,4 +22,13 @@ public class Animal {
 	public void comer() {
 		System.out.println("Eating...");
 	}
+
+	public void perderSalud(int danno) {
+		if(getSalud()-danno <=0) {
+			System.out.println("Eliminado");
+		}else {
+			setSalud(getSalud()-danno);
+			System.out.println("Salud= " + getSalud());
+		}
+	}
 }

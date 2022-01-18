@@ -24,4 +24,13 @@ public class Persona {
 	protected int getResistencia(){
 		return this.resistencia;
 	}
+
+	public void perderSalud(int danno) {
+		if(getSalud()-danno <=0) {
+			System.out.println("Eliminado");
+		}else {
+			setSalud(getSalud()-danno);
+			System.out.println("Salud= " + getSalud());
+		}
+	}
 }
