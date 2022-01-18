@@ -1,9 +1,13 @@
 package seresVivos;
 
 public class Chupacabras extends Animal{
+	public static int SALUD = 100;
 
-	public Chupacabras(	) {
-		
+	public Chupacabras(){
+		super(SALUD);
+	}
+	public Chupacabras(int salud) {
+		super(salud);
 	}
 	
 	public void embestir() {
