@@ -13,9 +13,8 @@ public class Cazador extends Persona {
 	private Arma arma;
 	private int municion;
 
-	public Cazador(Arma arma, int municion) {
+	public Cazador(int municion) {
 		super(SALUD, RESISTENCIA);
-		setArma(arma);
 		setMunicion(municion);
 	}
 
