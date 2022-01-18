@@ -6,16 +6,14 @@ public class Cazador extends Persona {
 	private static int RES_CORRER = 2;
 	private static int RES_RECARGAR = 1;
 	private static int RES_DISPARAR = 3;
+	public static int SALUD = 110;
+	public static int RESISTENCIA = 4;
 
 	private Arma arma;
 	private int municion;
 
-	public Cazador(int salud, int resistencia) {
-		super(salud, resistencia);
-	}
-
-	public Cazador(Arma arma, int municion, int salud, int resistencia) {
-		super(salud, resistencia);
+	public Cazador(Arma arma, int municion) {
+		super(SALUD, RESISTENCIA);
 		setArma(arma);
 		setMunicion(municion);
 	}
@@ -41,7 +39,7 @@ public class Cazador extends Persona {
 			System.out.println("No tienes municion");
 		} else {
 			System.out.println("PUM PUM");
-			setMunicion(this.municion - 2);
+			setMunicion(getMunicion() - 2);
 			setResistencia(RES_DISPARAR);
 		}
 	}

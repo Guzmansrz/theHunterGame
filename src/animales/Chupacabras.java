@@ -1,7 +1,10 @@
 package animales;
 
+import personas.Cazador;
+
 public class Chupacabras extends Animal{
-	public static int SALUD = 100;
+	public static int SALUD = 200;
+	public static int DANNO = 15;
 
 	public Chupacabras(){
 		super(SALUD);
@@ -10,7 +13,8 @@ public class Chupacabras extends Animal{
 		super(salud);
 	}
 	
-	public void embestir() {
+	public void embestir(Cazador cazador) {
+		cazador.recibirGolpe(DANNO);
 		System.out.println("gruuuuuggg");
 	}	
 	
