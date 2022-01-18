@@ -17,5 +17,4 @@ public class Chupacabras extends Animal{
 		cazador.perderSalud(DANNO);
 		System.out.println("gruuuuuggg");
 	}	
-	
 }
