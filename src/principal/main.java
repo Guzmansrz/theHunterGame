@@ -9,7 +9,6 @@ public class main {
 	    Cazador cazador = new Cazador(15);
 	    Chupacabras chucabras = new Chupacabras();
 	    cazador.disparar(chucabras);
-
 	}
 
 }
