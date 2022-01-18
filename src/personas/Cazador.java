@@ -3,15 +3,19 @@ package personas;
 import animales.Arma;
 
 public class Cazador extends Persona {
+	private static int RES_CORRER = 2;
+	private static int RER_RECARGAR = 1;
+	private static int RES_DISPARAR = 3;
+
 	private Arma arma;
 	private int municion;
 
-	public Cazador(int salud) {
-		super(salud);
+	public Cazador(int salud, int resistencia) {
+		super(salud, resistencia);
 	}
 
-	public Cazador(Arma arma, int municion, int salud) {
-		super(salud);
+	public Cazador(Arma arma, int municion, int salud, int resistencia) {
+		super(salud, resistencia);
 		setArma(arma);
 		setMunicion(municion);
 	}
@@ -38,11 +42,13 @@ public class Cazador extends Persona {
 		} else {
 			System.out.println("PUM PUM");
 			setMunicion(this.municion - 2);
+			setResistencia(RES_DISPARAR);
 		}
 	}
 
 	public void correr() {
 		System.out.println("Estoy corriendo");
+		setResistencia(RES_CORRER);
 	}
 	
 	public void recargarArma() {
@@ -51,6 +57,7 @@ public class Cazador extends Persona {
 		}
 		else {
 			arma.recargar();
+			setResistencia(RER_RECARGAR);
 		}
 	}
 	public void recibirGolpe(int danno) {

@@ -10,7 +10,6 @@ public class Arma {
 	}
 	private void setMunicionCargador(int i) {
 		this.municionCargador=i;
-		
 	}
 
 }
