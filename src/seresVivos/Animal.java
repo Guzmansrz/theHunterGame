@@ -59,7 +59,7 @@ public class Animal {
 	
 	public void correr() {
 		setVelocidad(40);
-		System.out.println("Running...");
+		System.out.println("Running");
 	}
 	public void comer() {
 		System.out.println("Eating...");
