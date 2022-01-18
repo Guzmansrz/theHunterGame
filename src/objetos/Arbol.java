@@ -1,4 +1,4 @@
-package obstaculos;
+package objetos;
 
 public class Arbol {
     

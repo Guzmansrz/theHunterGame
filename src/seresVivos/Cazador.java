@@ -45,7 +45,7 @@ public class Cazador extends Persona {
 	
 	public void recargarArma() {
 		if(getMunicion()==0) {
-			System.out.println("No puedes recargar porque no tienes municion");
+			System.out.println("No tienes municion");
 		}
 		else {
 			arma.recargar();
