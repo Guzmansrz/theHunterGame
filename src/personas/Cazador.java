@@ -18,10 +18,6 @@ public class Cazador extends Persona {
 		setMunicion(municion);
 	}
 
-	private void setArma(Arma arma) {
-		this.arma = arma;
-	}
-
 	protected void setMunicion(int municion) {
 		this.municion = municion;
 	}
