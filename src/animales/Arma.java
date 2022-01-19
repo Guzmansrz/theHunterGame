@@ -1,15 +1,20 @@
 package animales;
 
 public class Arma {
+	public static int BALAS = 6;
+	
+	public int municion; //Cantidad de municion que esta dentro del arma
 
-	public int municionCargador; //Cantidad de municion que esta dentro del arma
-
+	public Arma() {
+		setMunicion(BALAS);
+	}
+	
 	public void recargar() {
-		setMunicionCargador(this.municionCargador+6);
+		setMunicion(this.municion + BALAS);
 		
 	}
-	private void setMunicionCargador(int i) {
-		this.municionCargador=i;
+	private void setMunicion(int i) {
+		this.municion = i;
 	}
 
 }

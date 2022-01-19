@@ -9,13 +9,16 @@ public class Cazador extends Persona {
 	private static int RES_DISPARAR = 3;
 	public static int SALUD = 110;
 	public static int RESISTENCIA = 4;
+	private static int MUNICION = 100;
 
 	private Arma arma;
 	private int municion;
 
-	public Cazador(int municion) {
+	public Cazador() {
 		super(SALUD, RESISTENCIA);
-		setMunicion(municion);
+		Arma defaultArma = new Arma();
+		setArma(defaultArma);
+		setMunicion(MUNICION);
 	}
 
 	protected void setMunicion(int municion) {
@@ -25,6 +28,10 @@ public class Cazador extends Persona {
 	public Arma getArma() {
 		return arma;
 	}
+	
+	private void setArma(Arma arma) {
+		this.arma = arma;
+	}
 
 	public int getMunicion() {
 		return municion;
@@ -32,10 +39,10 @@ public class Cazador extends Persona {
 
 	public void disparar(Chupacabras chucabra) {
 		if (getMunicion() == 0) {
-			System.out.println("No tienes municion");
+			System.out.println("No tienes munición");
 		} else {
-			System.out.println("PUM PUM");
-			setMunicion(getMunicion() - 2);
+			System.out.println("PUM");
+			setMunicion(getMunicion() - 1);
 			setResistencia(RES_DISPARAR);
 			chucabra.perderSalud(12);
 		}
@@ -52,6 +59,7 @@ public class Cazador extends Persona {
 		}
 		else {
 			arma.recargar();
+			this.municion = municion - Arma.BALAS;
 			setResistencia(RES_RECARGAR);
 		}
 	}

@@ -6,7 +6,7 @@ import personas.Cazador;
 public class Main {
 	
 	public static void main(String[] args) {
-	    Cazador cazador = new Cazador(15);
+	    Cazador cazador = new Cazador();
 	    Chupacabras chucabras = new Chupacabras();
 	    cazador.disparar(chucabras);
 	    chucabras.embestir(cazador);
