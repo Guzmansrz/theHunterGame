@@ -9,6 +9,7 @@ public class Main {
 	    Cazador cazador = new Cazador(15);
 	    Chupacabras chucabras = new Chupacabras();
 	    cazador.disparar(chucabras);
+	    chucabras.embestir(cazador);
 		System.out.println("fin");
 	}
 
