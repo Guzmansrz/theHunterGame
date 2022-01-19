@@ -14,7 +14,7 @@ public class Chupacabras extends Animal{
 	}
 	
 	public void embestir(Cazador cazador) {
-		cazador.perderSalud(DANNO);
 		System.out.println("gruuuuuggg");
+		cazador.perderSalud(DANNO);
 	}	
 }
