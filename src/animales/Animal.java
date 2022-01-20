@@ -9,7 +9,7 @@ public class Animal {
 	// Atributos de la clase Animal
 	private int salud;
 	
-	public Animal() {
+	public Animal(int salud) {
 		setSalud(SALUD);
 	}
 	

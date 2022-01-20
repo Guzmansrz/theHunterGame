@@ -8,8 +8,7 @@ public class Chupacabras extends Animal{
 	public static int DANNO = 15;
 
 	public Chupacabras() {
-		super();
-		setSalud(SALUD);
+		super(DANNO);
 	}
 	
 	public void embestir(Cazador cazador) {
