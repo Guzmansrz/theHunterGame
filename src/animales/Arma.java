@@ -17,4 +17,8 @@ public class Arma {
 		this.municion = municion;
 	}
 
+	public void disparar(){
+		setMunicion(-2);
+	}
+
 }
