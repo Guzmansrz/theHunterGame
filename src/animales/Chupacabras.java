@@ -6,7 +6,6 @@ public class Chupacabras extends Animal{
 	//Constantes de la clase Chupacabras
 	public static int SALUD = 200;
 	public static int DANNO = 15;
-	public static int ksjajd=67;
 
 	public Chupacabras() {
 		super(DANNO);
