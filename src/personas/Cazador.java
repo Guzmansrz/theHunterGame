@@ -4,6 +4,8 @@ import animales.Arma;
 import animales.Chupacabras;
 
 public class Cazador extends Persona {
+
+	//Constantes de la clase Cazador
 	private static int RES_CORRER = 2;
 	private static int RES_RECARGAR = 1;
 	private static int RES_DISPARAR = 3;
@@ -11,6 +13,7 @@ public class Cazador extends Persona {
 	public static int RESISTENCIA = 4;
 	private static int MUNICION = 100;
 
+	//Atributos de la clase Cazador
 	private Arma arma;
 	private int municion;
 
@@ -20,31 +23,36 @@ public class Cazador extends Persona {
 		setArma(defaultArma);
 		setMunicion(MUNICION);
 	}
+	// Getters y Setters de la clase Cazador
+	public int getMunicion() {
+		return municion;
+	}
 
 	protected void setMunicion(int municion) {
 		this.municion = municion;
 	}
 
 	public Arma getArma() {
-		return arma;
+		return this.arma;
 	}
 	
 	private void setArma(Arma arma) {
 		this.arma = arma;
 	}
-
-	public int getMunicion() {
-		return municion;
-	}
-
-	public void disparar(Chupacabras chucabra) {
+	/**
+	 * Método DISPARAR que permite al objeto cazador inflingir daño al Chupacabras,
+	 * Si no le queda municion al cazador no puede disparar, si tuviera dispara una bala,
+	 * La cual se le resta de la munición del arma.
+	 * @param chucabras
+	 */
+	public void disparar(Chupacabras chupacabras) {
 		if (getMunicion() == 0) {
-			System.out.println("No tienes munici�n");
+			System.out.println("No tienes municion");
 		} else {
 			System.out.println("PUM");
-			setMunicion(getMunicion() - 1);
+			//getArma().setMunicion(getMunicion() - 1);
 			setResistencia(RES_DISPARAR);
-			chucabra.perderSalud(12);
+			chupacabras.perderSalud(12);
 		}
 	}
 

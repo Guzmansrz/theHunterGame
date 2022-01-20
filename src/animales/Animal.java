@@ -2,10 +2,15 @@ package animales;
 
 
 public class Animal {
+
+	//Constantes de la clase Animal
+	private static int SALUD = 110;
+	
+	// Atributos de la clase Animal
 	private int salud;
 	
-	public Animal(int salud) {
-		setSalud(salud);
+	public Animal() {
+		setSalud(SALUD);
 	}
 	
 	protected void setSalud(int salud) {

@@ -13,8 +13,8 @@ public class Arma {
 		setMunicion(this.municion + BALAS);
 		
 	}
-	private void setMunicion(int i) {
-		this.municion = i;
+	protected void setMunicion(int municion) {
+		this.municion = municion;
 	}
 
 }
