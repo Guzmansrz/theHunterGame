@@ -50,7 +50,7 @@ public class Cazador extends Persona {
 			System.out.println("No tienes municion");
 		} else {
 			System.out.println("PUM");
-			//getArma().setMunicion(getMunicion() - 1);
+			getArma().disparar();
 			setResistencia(RES_DISPARAR);
 			chupacabras.perderSalud(12);
 		}
