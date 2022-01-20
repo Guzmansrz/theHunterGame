@@ -1,7 +1,7 @@
 package personas;
 
-import animales.Arma;
 import animales.Chupacabras;
+import objetos.Arma;
 
 public class Cazador extends Persona {
 
@@ -40,9 +40,9 @@ public class Cazador extends Persona {
 		this.arma = arma;
 	}
 	/**
-	 * Método DISPARAR que permite al objeto cazador inflingir daño al Chupacabras,
+	 * Metodo DISPARAR que permite al objeto cazador inflingir da�o al Chupacabras,
 	 * Si no le queda municion al cazador no puede disparar, si tuviera dispara una bala,
-	 * La cual se le resta de la munición del arma.
+	 * La cual se le resta de la municion del arma.
 	 * @param chucabras
 	 */
 	public void disparar(Chupacabras chupacabras) {
@@ -56,7 +56,7 @@ public class Cazador extends Persona {
 		}
 	}
 
-	public void correr() {
+	public void moverse() {
 		System.out.println("Estoy corriendo");
 		setResistencia(RES_CORRER);
 	}

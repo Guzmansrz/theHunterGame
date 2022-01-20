@@ -1,5 +1,5 @@
 package board;
 
-public class Tablero {
-    
+public interface Tablero {
+
 }

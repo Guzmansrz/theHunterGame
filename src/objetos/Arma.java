@@ -1,4 +1,4 @@
-package animales;
+package objetos;
 
 public class Arma {
 	public static int BALAS = 6;
