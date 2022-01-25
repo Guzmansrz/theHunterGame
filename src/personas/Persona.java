@@ -2,8 +2,8 @@ package personas;
 
 public class Persona {
 	private int salud;
-	//Resistencia por turno de cada persona, es decir, no puede hacer de todo, cada accion (recargar, moverse, disparar etc) 
-	// requiere ciertos puntos de accion
+	//Resistencia por turno de cada persona, es decir, no puede hacer de todo, 
+	// cada accion (recargar, moverse, disparar etc) requiere ciertos puntos de accion
 	private int resistencia; 
 	
 	public Persona(int salud, int resistencia) {
