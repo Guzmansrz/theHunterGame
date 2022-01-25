@@ -4,8 +4,8 @@ import personas.Cazador;
 
 public class Chupacabras extends Animal{
 	//Constantes de la clase Chupacabras
-	public static int SALUD = 200;
-	public static int DANNO = 15;
+	public static final int SALUD = 200;
+	public static final int DANNO = 15;
 
 	public Chupacabras() {
 		super(DANNO);

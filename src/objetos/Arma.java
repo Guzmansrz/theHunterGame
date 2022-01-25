@@ -1,7 +1,7 @@
 package objetos;
 
 public class Arma {
-	public static int BALAS = 6;
+	public static final int BALAS = 6;
 	
 	public int municion; //Cantidad de municion que esta dentro del arma
 

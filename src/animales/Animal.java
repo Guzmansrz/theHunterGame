@@ -4,7 +4,7 @@ package animales;
 public class Animal {
 
 	//Constantes de la clase Animal
-	private static int SALUD = 110;
+	private static final int SALUD = 110;
 	
 	// Atributos de la clase Animal
 	private int salud;

@@ -6,12 +6,12 @@ import objetos.Arma;
 public class Cazador extends Persona {
 
 	//Constantes de la clase Cazador
-	private static int RES_CORRER = 2;
-	private static int RES_RECARGAR = 1;
-	private static int RES_DISPARAR = 3;
-	public static int SALUD = 110;
-	public static int RESISTENCIA = 4;
-	private static int MUNICION = 100;
+	private static final int RES_CORRER = 2;
+	private static final int RES_RECARGAR = 1;
+	private static final int RES_DISPARAR = 3;
+	public static final int SALUD = 110;
+	public static final int RESISTENCIA = 4;
+	private static final int MUNICION = 100;
 
 	//Atributos de la clase Cazador
 	private Arma arma;
